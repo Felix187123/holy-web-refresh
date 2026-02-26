@@ -2,98 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 20 20% 15%;
+    --background: 0 0% 100%;
+    --foreground: 220 25% 10%;
 
-    --card: 40 30% 99%;
-    --card-foreground: 20 20% 15%;
+    --card: 220 20% 97%;
+    --card-foreground: 220 25% 10%;
 
-    --popover: 40 30% 99%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
 
-    --primary: 350 45% 30%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 220 60% 20%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 30% 92%;
-    --secondary-foreground: 20 20% 20%;
+    --secondary: 220 15% 94%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 40 20% 93%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 38 70% 50%;
-    --accent-foreground: 20 20% 10%;
+    --accent: 32 95% 52%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 350 45% 30%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 60% 20%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 40 25% 95%;
-    --sidebar-foreground: 20 20% 20%;
-    --sidebar-primary: 350 45% 30%;
-    --sidebar-primary-foreground: 40 33% 97%;
-    --sidebar-accent: 40 25% 90%;
-    --sidebar-accent-foreground: 20 20% 15%;
-    --sidebar-border: 35 20% 88%;
-    --sidebar-ring: 350 45% 30%;
+    --sidebar-background: 220 20% 97%;
+    --sidebar-foreground: 220 25% 15%;
+    --sidebar-primary: 220 60% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 92%;
+    --sidebar-accent-foreground: 220 25% 10%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 220 60% 20%;
 
-    /* Custom tokens */
-    --church-gold: 38 70% 50%;
-    --church-burgundy: 350 45% 30%;
-    --church-cream: 40 33% 97%;
-    --church-dark: 20 20% 15%;
-    --church-warm-gray: 30 10% 60%;
+    /* Custom church tokens */
+    --church-gold: 32 95% 52%;
+    --church-navy: 220 60% 20%;
+    --church-slate: 220 15% 45%;
+    --church-light: 220 20% 97%;
+    --church-warm: 35 40% 96%;
 
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Source Sans 3', system-ui, sans-serif;
+    --font-heading: 'DM Serif Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
 
     --hero-overlay: linear-gradient(
-      to bottom,
-      hsla(20, 20%, 10%, 0.5) 0%,
-      hsla(20, 20%, 10%, 0.7) 100%
-    );
-
-    --section-gradient: linear-gradient(
-      180deg,
-      hsl(40 30% 99%) 0%,
-      hsl(40 33% 97%) 100%
-    );
-
-    --gold-gradient: linear-gradient(
       135deg,
-      hsl(38 70% 50%) 0%,
-      hsl(42 65% 58%) 100%
+      hsla(220, 60%, 10%, 0.85) 0%,
+      hsla(220, 40%, 15%, 0.6) 50%,
+      hsla(32, 80%, 30%, 0.4) 100%
     );
+
+    --glass: hsla(0, 0%, 100%, 0.7);
+    --glass-border: hsla(0, 0%, 100%, 0.3);
+
+    --gold-gradient: linear-gradient(135deg, hsl(32 95% 52%) 0%, hsl(38 90% 60%) 100%);
+    --navy-gradient: linear-gradient(135deg, hsl(220 60% 20%) 0%, hsl(220 50% 30%) 100%);
   }
 
   .dark {
-    --background: 20 20% 10%;
-    --foreground: 40 20% 90%;
-    --card: 20 18% 14%;
-    --card-foreground: 40 20% 90%;
-    --popover: 20 18% 14%;
-    --popover-foreground: 40 20% 90%;
-    --primary: 38 70% 50%;
-    --primary-foreground: 20 20% 10%;
-    --secondary: 20 15% 20%;
-    --secondary-foreground: 40 20% 90%;
-    --muted: 20 15% 20%;
-    --muted-foreground: 30 10% 60%;
-    --accent: 20 15% 20%;
-    --accent-foreground: 40 20% 90%;
+    --background: 220 25% 7%;
+    --foreground: 220 15% 92%;
+    --card: 220 20% 12%;
+    --card-foreground: 220 15% 92%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 15% 92%;
+    --primary: 32 95% 52%;
+    --primary-foreground: 220 25% 7%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 15% 92%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 220 20% 15%;
+    --accent-foreground: 220 15% 92%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 20 15% 22%;
-    --input: 20 15% 22%;
-    --ring: 38 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 32 95% 52%;
   }
 }
 
@@ -103,18 +98,18 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-sans);
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+    @apply px-5 py-20 md:px-8 md:py-28 lg:px-16;
   }
 
   .container-church {
@@ -129,7 +124,22 @@
   }
 
   .divider-gold {
-    @apply mx-auto h-0.5 w-16;
+    @apply h-1 w-12 rounded-full;
     background: var(--gold-gradient);
+  }
+
+  .glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px hsla(220, 40%, 20%, 0.15);
   }
 }
