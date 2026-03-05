@@ -13,7 +13,7 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 const groups = [
-  { icon: Users, title: "Kirchenvorstand", desc: "Verwaltung und Leitung der Pfarrgemeinde" },
+  { icon: Users, title: "Gremien", desc: "Verwaltung und Leitung der Pfarrgemeinde" },
   { icon: Music, title: "Kirchenchor", desc: "Musikalische Gestaltung der Gottesdienste" },
   { icon: Heart, title: "Caritas", desc: "Nächstenliebe in Tat – Hilfe für Bedürftige" },
   { icon: BookOpen, title: "Bibelkreis", desc: "Gemeinsames Lesen und Reflektieren" },
