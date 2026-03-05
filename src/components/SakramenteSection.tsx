@@ -37,7 +37,7 @@ export function SakramenteSection() {
         <div className="grid sm:grid-cols-2 gap-5">
           {sakramente.map((s, i) => (
             <FadeIn key={i} delay={i * 0.1}>
-              <div className="group bg-background rounded-2xl p-6 md:p-8 hover-lift border border-transparent hover:border-border relative overflow-hidden">
+              <div className="group bg-background rounded-2xl p-6 md:p-8 hover-lift border border-transparent hover:border-border relative overflow-hidden h-full">
                 <span className="absolute top-6 right-6 font-heading text-5xl text-secondary font-bold group-hover:text-church-gold/10 transition-colors">{s.num}</span>
                 <div className="relative">
                   <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-5 group-hover:bg-church-gold/10 transition-colors">
