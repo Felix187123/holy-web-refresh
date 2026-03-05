@@ -108,7 +108,7 @@ export function AboutSection() {
           ].map((church, i) => (
             <FadeIn key={i} delay={i * 0.15}>
               <div className="group relative rounded-2xl overflow-hidden hover-lift cursor-pointer">
-                <div className="aspect-[16/10] overflow-hidden">
+                <div className="aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={church.img}
                     alt={church.title}
