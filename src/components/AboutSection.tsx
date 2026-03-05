@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import churchExterior from "@/assets/church-exterior.jpg";
 import chapelWemb from "@/assets/chapel-wemb.jpg";
 
