@@ -103,7 +103,7 @@ export function AboutSection() {
               img: chapelWemb,
               title: "Heilig-Kreuz, Wemb",
               desc: "Seit 2005 Teil unserer Pfarrgemeinde. Ein Ort der Stille und Besinnung in ländlicher Umgebung.",
-              imgClass: "object-[center_20%]",
+              imgClass: "!object-contain",
             },
           ].map((church, i) => (
             <FadeIn key={i} delay={i * 0.15}>
