@@ -112,7 +112,7 @@ export function AboutSection() {
                   <img
                     src={church.img}
                     alt={church.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${church.imgClass}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
                 </div>
