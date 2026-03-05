@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import churchExterior from "@/assets/church-exterior.jpg";
 import chapelWemb from "@/assets/chapel-wemb.jpg";
 
@@ -98,16 +99,18 @@ export function AboutSection() {
               title: "St. Cyriakus, Weeze",
               desc: "Mittelpunkt unserer Gemeinde – das in den 1950er Jahren wieder aufgebaute Gotteshaus dient als Hauptkirche der Pfarrei.",
               imgClass: "",
+              link: "/st-cyriakus",
             },
             {
               img: chapelWemb,
               title: "Heilig-Kreuz, Wemb",
               desc: "Seit 2005 Teil unserer Pfarrgemeinde. Ein Ort der Stille und Besinnung in ländlicher Umgebung.",
               imgClass: "!object-contain",
+              link: "/heilig-kreuz",
             },
           ].map((church, i) => (
             <FadeIn key={i} delay={i * 0.15}>
-              <div className="group relative rounded-2xl overflow-hidden hover-lift cursor-pointer">
+              <Link to={church.link} className="group relative rounded-2xl overflow-hidden hover-lift cursor-pointer block">
                 <div className="aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={church.img}
@@ -124,7 +127,7 @@ export function AboutSection() {
                     <ArrowRight className="h-4 w-4" />
                   </div>
                 </div>
-              </div>
+              </Link>
             </FadeIn>
           ))}
         </div>
