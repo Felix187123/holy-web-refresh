@@ -97,11 +97,13 @@ export function AboutSection() {
               img: churchExterior,
               title: "St. Cyriakus, Weeze",
               desc: "Mittelpunkt unserer Gemeinde – das in den 1950er Jahren wieder aufgebaute Gotteshaus dient als Hauptkirche der Pfarrei.",
+              imgClass: "",
             },
             {
               img: chapelWemb,
               title: "Heilig-Kreuz, Wemb",
               desc: "Seit 2005 Teil unserer Pfarrgemeinde. Ein Ort der Stille und Besinnung in ländlicher Umgebung.",
+              imgClass: "object-[center_20%]",
             },
           ].map((church, i) => (
             <FadeIn key={i} delay={i * 0.15}>
