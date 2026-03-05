@@ -97,11 +97,13 @@ export function AboutSection() {
               img: churchExterior,
               title: "St. Cyriakus, Weeze",
               desc: "Mittelpunkt unserer Gemeinde – das in den 1950er Jahren wieder aufgebaute Gotteshaus dient als Hauptkirche der Pfarrei.",
+              imgClass: "",
             },
             {
               img: chapelWemb,
               title: "Heilig-Kreuz, Wemb",
               desc: "Seit 2005 Teil unserer Pfarrgemeinde. Ein Ort der Stille und Besinnung in ländlicher Umgebung.",
+              imgClass: "object-[center_20%]",
             },
           ].map((church, i) => (
             <FadeIn key={i} delay={i * 0.15}>
@@ -110,7 +112,7 @@ export function AboutSection() {
                   <img
                     src={church.img}
                     alt={church.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${church.imgClass}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
                 </div>
