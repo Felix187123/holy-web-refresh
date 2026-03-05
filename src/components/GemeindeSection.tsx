@@ -41,7 +41,7 @@ export function GemeindeSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {groups.map((g, i) => (
             <FadeIn key={i} delay={i * 0.08}>
-              <div className="group bg-card rounded-2xl p-6 hover-lift border border-transparent hover:border-church-gold/20 cursor-pointer relative overflow-hidden">
+              <div className="group bg-card rounded-2xl p-6 hover-lift border border-transparent hover:border-church-gold/20 cursor-pointer relative overflow-hidden h-full">
                 <div className="absolute top-0 right-0 w-24 h-24 rounded-full -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ background: "var(--gold-gradient)", filter: "blur(40px)" }} />
                 <div className="relative">
                   <div className="flex items-center justify-between mb-4">
